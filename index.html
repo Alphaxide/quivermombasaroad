@@ -21,22 +21,23 @@
         }
         .col-12 {
             padding: 0; /* Remove padding from columns */
+             /* Use flex to ensure images follow each other */
+            flex-wrap: nowrap; /* Prevent wrapping of images */
+            margin: 0;
         }
-        .image-slider {
-            height: 100vh; /* Each image takes the full viewport height */
-            display: flex;
+        .image-slider { /* Each image takes the full viewport height */
+            display: flex; /* Display images inline */
+            margin: 0; /* Remove any margin */
             align-items: center; /* Center the images vertically */
             justify-content: center; /* Center the images horizontally */
-            padding: 0; /* Remove padding inside the slider */
-            margin: 2% 0 0 0; /* Add only top margin of 2% */
+            padding: 0; /* Remove padding */
             box-sizing: border-box; /* Include padding and border in total height/width */
         }
         .image-slider img {
             width: 100%; /* Make image fill the container width */
             height: auto; /* Maintain aspect ratio */
             max-height: 98%; /* Ensure image does not exceed container height */
-            padding: 0 10px; /* Add horizontal padding (10px on left and right) */
-            margin: 0; /* Remove any margin from images */
+            padding: 0; /* Remove padding */
             object-fit: contain; /* Ensure image is fully visible */
             border-radius: 5px; /* Optional: add slight rounding of corners */
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow */
