@@ -23,21 +23,20 @@
             padding: 0; /* Remove padding from columns */
         }
         .image-slider {
-            height: calc(100vh - 2%); /* Adjust height to account for margins */
+            height: 100vh; /* Each image takes the full viewport height */
             display: flex;
             align-items: center; /* Center the images vertically */
-            justify-content: center; /* Add 2% margin at the top and bottom */
-            padding: 2%; /* Add padding around the image container */
-            box-sizing: border-box; /* Include padding in total height/width */
+            justify-content: center; /* Center the images horizontally */
+            margin: 0; /* Remove margin */
+            padding: 0; /* Remove padding */
         }
         .image-slider img {
-            max-height: 100%; /* Ensure the image does not exceed the height */
-            max-width: 100%; /* Ensure the image does not exceed the width */
+            height: 100%; /* Fill the container's height */
+            width: 100%; /* Fill the container's width */
+            object-fit: cover; /* Maintain aspect ratio */
             margin: 0; /* Remove image margin */
             padding: 0; /* Remove image padding */
-            object-fit: cover; /* Maintain aspect ratio */
-            border-radius: 10px; /* Optional: add rounded corners */
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
+            display: block; /* Ensure the image is treated as a block element */
         }
     </style>
 </head>
