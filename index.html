@@ -27,17 +27,17 @@
             display: flex;
             align-items: center; /* Center the images vertically */
             justify-content: center; /* Center the images horizontally */
-            padding: 1%; /* Remove padding inside the slider */
+            padding: 0; /* Remove padding inside the slider */
             margin: 2% 0 0 0; /* Add only top margin of 2% */
             box-sizing: border-box; /* Include padding and border in total height/width */
         }
         .image-slider img {
-            height: 98%; /* Make image take almost the full height of its container */
-            width: auto; /* Allow width to adjust automatically */
-            max-width: 100%; /* Ensure image does not exceed the container width */
+            width: 100%; /* Make image fill the container width */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 98%; /* Ensure image does not exceed container height */
             padding: 0 10px; /* Add horizontal padding (10px on left and right) */
             margin: 0; /* Remove any margin from images */
-            object-fit: cover; /* Ensure images cover the container without stretching */
+            object-fit: contain; /* Ensure image is fully visible */
             border-radius: 5px; /* Optional: add slight rounding of corners */
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow */
         }
