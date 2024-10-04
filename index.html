@@ -12,10 +12,11 @@
             overflow-y: auto; /* Enable vertical scrolling */
         }
         .image-slider {
-            height: 100vh; /* Each image takes the full viewport height */
+            height: calc(100vh - 1%); /* Each image takes the full viewport height minus 1% */
             display: flex;
             align-items: center; /* Center the images vertically */
             justify-content: center; /* Center the images horizontally */
+            margin-bottom: 1%; /* Add 1% margin at the bottom */
         }
         .image-slider img {
             max-height: 100%; /* Ensure the image does not exceed the height */
